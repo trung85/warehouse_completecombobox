@@ -340,7 +340,8 @@ namespace SergeUtils
                 m_boldFont.Dispose();
             }
             m_suggestionList.Font = Font;
-            m_boldFont = new Font(Font, FontStyle.Bold);
+            //m_boldFont = new Font(Font, FontStyle.Bold);
+            m_boldFont = new Font(Font, FontStyle.Regular);
             m_suggestionList.ItemHeight = m_boldFont.Height + 2;
         }
 
